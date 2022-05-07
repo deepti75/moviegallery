@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#backDrop{
+ position: fixed;
+    left:0;
+    top:0;
+    width: 100vw;
+    height:100vh;
+    background-color: rgb(0, 0, 0,0.5) ;
+    display: none;
+}
+#backDrop.show{
+    display: block;
+}
+.myModal{
+    position: fixed;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    top:25vh;
+    width:60%;
+    left:20%;
+    border:1px solid rgba(0,0,0,0.25);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    display: none;
+    animation: slide-down 0.3s ease-in-out forwards;
+}
+.myModal.show{
+    display: block;
+}
+.movieGallery{
+    height:250px;
+    width:250px;
+    object-fit: cover;
+}
+.myModalHeading .myClose{
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes slide-down{
+    from{
+        transform: translateY(-5rem);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
